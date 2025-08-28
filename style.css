@@ -1,0 +1,74 @@
+/* Global styles */
+:root {
+  --brand: #4f46e5;
+}
+
+* { box-sizing: border-box; }
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+ h1 {
+  font-family: "Rubik Puddles", cursive;
+  font-size: 3rem; /* make it nice and big */
+  color: #fff;     /* stands out more */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* glow effect */
+}
+
+body {
+   margin: 0;
+  font-family: 'Cal Sans', sans-serif;
+  color: #111;
+  line-height: 1.6;
+
+  /* Background (use either color or image) */
+  /* Solid color: */
+  background: #f5f7fb;
+
+  /* OR background image (put a file at assets/img/bg.jpg): */
+  /* background: url("assets/img/bg.jpg") center / cover no-repeat fixed; */
+}
+
+body {
+  margin: 0;
+  font-family: "Cal Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+
+  /* Center everything */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  /* Background */
+  background: url("img/bg2.jpg") center / cover no-repeat fixed;
+  /*background: linear-gradient(135deg, #4f46e5, #9333ea);*/
+  
+}
+
+#btn {
+  padding: 16px 28px;
+  border: 0;
+  border-radius: 14px;
+  background: var(--brand);
+  background-color: #001f3f;
+  color: rgb(255, 255, 255);
+  font-weight: 1000;
+  cursor: pointer;
+}
+#btn:hover { filter: brightness(0.95); }
+button:hover {
+  background-color: #890000;  /* brighter blue */
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+.card {
+  background: rgba(3, 43, 107, 0.088); /* white with 20% opacity */
+  backdrop-filter: blur(8px);           /* blur background behind */
+  border-radius: 16px;                  /* rounded corners */
+  padding: 60px 80px;                   /* space inside box */
+  text-align: center;                   /* center text */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* soft shadow */
+   max-width: 600px; 
+}
